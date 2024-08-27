@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Hyva\Checkout\Model\Form\EntityForm\EavAttributeShippingAddressForm">
+        <arguments>
+            <argument name="entityFormModifiers" xsi:type="array">
+                <item name="elgentos_checkoutplaceholdermodifier" xsi:type="object" sortOrder="1000">
+                    Elgentos\HyvaCheckoutPlaceholdersModifier\Model\ShippingAddress\WithPlaceholderModifier
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
